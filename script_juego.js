@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "El personaje no aparece en la serie " + numeroAleatorio + "!",
+                text: "El personaje "+opcion +" no aparece en la serie " + numeroAleatorio + "!",
                 showConfirmButton: false,
                 footer: '<a href="juego.html">Volver a jugar</a>'
             });
