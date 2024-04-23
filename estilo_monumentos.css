@@ -1,0 +1,99 @@
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #000000, #6a1c1c, #000000, #f80e0e);
+    background-size: 400% 400%;
+    animation: gradient 10s linear infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#navOpciones {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#navOpciones li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#navOpciones a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contenidoPrincipal {
+    padding: 20px;
+}
+
+#contenidoPrincipal h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#contenidoPrincipal ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#contenidoPrincipal ul li {
+    margin-bottom: 10px;
+}
+#imagen1,
+#imagen2 {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+#imagen1 {
+    left: 0;
+}
+
+#imagen2 {
+    right: 0;
+}
+
+#imagen1:hover,
+#imagen2:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 740px) {
+    #imagen1,
+    #imagen2 {
+        width: 100%;
+        position: static;
+        margin: 20px auto;
+    }
+}

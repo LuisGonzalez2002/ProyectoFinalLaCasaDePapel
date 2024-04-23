@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - La Casa de Papel</title>
+    <link rel="stylesheet" href="estilo_juego.css">
+    <script src="script_juego.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<header>
+
+    <img src="logo.jpg" id="logo" alt="Logo de La Casa de Papel">
+    <h1 id="tituloPrincipal">Juego</h1>
+
+    <nav>
+        <ul id="navOpciones">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="monumentosAtracados.html">Monumentos atracados</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="temporadas.html">Temporadas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="contenidoPrincipal">
+    <div id="personajes">
+        <h2>Opciones disponibles:</h2>
+        <ul id="listaPersonajes">
+
+        </ul>
+    </div>
+    <div id="pelicula">
+        <h2>Este personaje aparece en la serie:</h2>
+        <p id="numeroPelicula"></p>
+    </div>
+    <div id="comprobar">
+        <input type="text" id="opcion" placeholder="Escribe tu opción">
+        <button id="botonComprobar">Comprobar</button>
+    </div>
+    <div id="resultado"></div>
+</section>
+
+<footer>
+
+    <p>© 2024 La Casa de Papel</p>
+</footer>
+
+</body>
+</html>
