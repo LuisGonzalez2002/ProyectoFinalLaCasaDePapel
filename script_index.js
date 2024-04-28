@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Se mostrará un mensaje de bienvenida al cargar la página
     //alert("¡Bienvenido a La Casa de Papel!");
+    //Biblioteca para las alertas
     Swal.fire({
         title: "Bienvenido!",
         text: "En esta página encontrarás información sobre La Casa de Papel",
